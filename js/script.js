@@ -17,7 +17,7 @@ if (navigator.serviceWorker) {
 /**
  * This is the age the user inputs
  */
-  var age = parseFloat(document.getElementById("age-number").value)
+var age = parseFloat(document.getElementById("age-number").value)
 
 /**
  * This function tells you what movie you may watch based on your age.
@@ -26,12 +26,10 @@ function myButtonClicked() {
   if (age >= 17) {
     document.getElementById("movie-rating").innerHTML =
       "<p>You may see an R rated movie alone.</p>"
-  }
-  else if (age >= 13) {
+  } else if (age >= 13) {
     document.getElementById("movie-rating").innerHTML =
       "<p>You may see a PG-13 movie alone.</p>"
-  }
-  else if (age >= 5) {
+  } else if (age >= 5) {
     document.getElementById("movie-rating").innerHTML =
       "<p>You may see a G or PG movie alone.</p>"
   } else {
