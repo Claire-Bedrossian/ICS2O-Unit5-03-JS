@@ -1,23 +1,47 @@
-// Copyright (c) 202X Claire Bedrossian All rights reserved
+// Copyright (c) 2022 Claire Bedrossian All rights reserved
 //
 // Created by: Claire Bedrossian
-// Created on: XXX 202X
+// Created on: Nov 202X
 // This file contains the JS functions for index.html
 
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit5-03-JS/sw.js", {
+    scope: "/ICS2O-Unit5-03-JS/",
   })
 }
+/**
+ * This is the age the user inputs
+ */
+const age = document.getElementById("age").innerHTML
 
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
-}
+ function myButtonClicked() {
+   
+   if (age >= 17) {
+     document.getElementById("movie-rating").innerHTML =
+       "<p>You may see an R rated movie alone.</p>"
+   } if (age >= 13) {
+     document.getElementById("movie-rating").innerHTML =
+       "<p>You may see a PG-13 movie alone.</p>"
+    
+   } if (age >= 5) {
+    document.getElementById("movie-rating").innerHTML =
+    "<p>You may see a G or PG movie alone.</p>"
+   } else {
+    document.getElementById("movie-rating").innerHTML =
+    "<p>You probably shouldn't be going to see movies.</p>"
+   } {
+    
+   } {
+     document.getElementById("radio-button-value").innerHTML =
+       negativeRandomNum
+   }
+ }
+ 
