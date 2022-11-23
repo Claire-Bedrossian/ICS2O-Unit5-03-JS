@@ -20,10 +20,10 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   /**
- * This is the age the user inputs
- */
-var age = parseFloat(document.getElementById("age-number").value)
-  
+   * This is the age the user inputs
+   */
+  var age = parseFloat(document.getElementById("age-number").value)
+
   if (age >= 17) {
     document.getElementById("movie-rating").innerHTML =
       "<p>You may see an R rated movie alone.</p>"
