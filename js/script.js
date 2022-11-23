@@ -14,15 +14,16 @@ if (navigator.serviceWorker) {
     scope: "/ICS2O-Unit5-03-JS/",
   })
 }
-/**
- * This is the age the user inputs
- */
-var age = parseFloat(document.getElementById("age-number").value)
 
 /**
  * This function tells you what movie you may watch based on your age.
  */
 function myButtonClicked() {
+  /**
+ * This is the age the user inputs
+ */
+var age = parseFloat(document.getElementById("age-number").value)
+  
   if (age >= 17) {
     document.getElementById("movie-rating").innerHTML =
       "<p>You may see an R rated movie alone.</p>"
